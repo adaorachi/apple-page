@@ -151,7 +151,7 @@ table {
   background: -o-linear-gradient(top, rgba(145, 143, 145, 1) 0%, rgba(128, 128, 128, 1) 35%, rgba(95, 95, 95, 1) 59%, rgba(94, 94, 94, 1) 59%, rgba(94, 94, 94, 1) 100%);
   background: -ms-linear-gradient(top, rgba(145, 143, 145, 1) 0%, rgba(128, 128, 128, 1) 35%, rgba(95, 95, 95, 1) 59%, rgba(94, 94, 94, 1) 59%, rgba(94, 94, 94, 1) 100%);
   background: linear-gradient(to bottom, rgba(145, 143, 145, 1) 0%, rgba(128, 128, 128, 1) 35%, rgba(95, 95, 95, 1) 59%, rgba(94, 94, 94, 1) 59%, rgba(94, 94, 94, 1) 100%);
-  width: 980px;
+  width: 73%;
   height: 34px;
   margin: 0 auto;
   border-radius: 4px;
@@ -167,6 +167,7 @@ table {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   height: 100%;
   color: #fff;
 }
@@ -232,7 +233,7 @@ form.form-search button {
 .section-one .billboard {
   width: 100%;
   height: 538px;
-  background: #b2b2b2 url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg") 50% 100% no-repeat;
+  background: #b2b2b2 url("../images/hero.jpg") 50% 100% no-repeat;
 }
 
 .section-one .content {
@@ -369,4 +370,70 @@ footer .copyright a {
 footer .right a:hover,
 footer .copyright a:hover {
   text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  /* Main Content */
+  .section-one .billboard {
+    height: 438px;
+    background: #b2b2b2 url("../images/hero.jpg") 50% 100% no-repeat;
+  }
+
+  header .lower i {
+    font-size: 22px;
+  }
+
+  header .heading h1 {
+    font-size: 35px;
+  }
+
+  header .sub-heading h2 {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  header h2.lower {
+    font-size: 18px;
+  }
+
+  .section-two .images {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2px 0 10px;
+  }
+
+  .section-two .items {
+    flex: 100%;
+    width: 100%;
+    margin: 2px;
+  }
+
+  .section-two .items:nth-of-type(3n + 4) {
+    /* margin-right: 0; */
+  }
+
+  /* Footer */
+  footer {
+    width: 95%;
+    text-align: center;
+  }
+
+  footer .left,
+  footer .copyright p,
+  footer .copyright ul {
+    float: left;
+  }
+
+  footer .right {
+    float: none;
+  }
+
+  footer .right ul li,
+  footer .copyright li {
+    float: left;
+  }
 }
