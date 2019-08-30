@@ -142,16 +142,12 @@ table {
   margin: 0;
   padding: 0;
   font-size: 12px;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  font-family: Lato, "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+
+  /* "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif; */
 }
 
-/* Main Content */
-.section-one .billboard {
-  width: 100%;
-  height: 538px;
-  background: #b2b2b2 url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg") 50% 100% no-repeat;
-}
-
+/* Nav Bar */
 .top-nav {
   background: -webkit-linear-gradient(top, rgba(145, 143, 145, 1) 0%, rgba(128, 128, 128, 1) 35%, rgba(95, 95, 95, 1) 59%, rgba(94, 94, 94, 1) 59%, rgba(94, 94, 94, 1) 100%);
   background: -o-linear-gradient(top, rgba(145, 143, 145, 1) 0%, rgba(128, 128, 128, 1) 35%, rgba(95, 95, 95, 1) 59%, rgba(94, 94, 94, 1) 59%, rgba(94, 94, 94, 1) 100%);
@@ -167,13 +163,6 @@ table {
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px;
   border: 1px inset rgba(145, 143, 145, 1);
-}
-
-.section-one .content {
-  position: absolute;
-  top: 82px;
-  left: 0;
-  right: 0;
 }
 
 .top-nav ul {
@@ -195,4 +184,98 @@ table {
 .top-nav ul li:not(.search-list) {
   flex: 10.6%;
   border-right: 1px inset rgb(109, 109, 109);
+}
+
+.top-nav .search-list {
+  width: 14.3%;
+}
+
+.top-nav ul li:hover:not(.search-list) {
+  background: -webkit-linear-gradient(top, rgba(112, 112, 112, 1) 0%, rgba(97, 96, 97, 1) 35%, rgba(71, 71, 71, 1) 55%, rgba(71, 71, 71, 1) 55%, rgba(64, 64, 64, 1) 59%, rgba(26, 26, 26, 1) 100%);
+  cursor: pointer;
+}
+
+.top-nav ul span,
+.top-nav .apple,
+.form-search .search-icon {
+  color: #f1f1f1;
+  width: 100%;
+  font-size: 0.8rem;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.top-nav .apple {
+  font-size: 22px;
+}
+
+form.form-search input[type="text"] {
+  background: #f1f1f1;
+  background: -webkit-linear-gradient(top, rgba(145, 143, 145, 1) 0%, rgba(128, 128, 128, 1) 35%, rgba(95, 95, 95, 1) 59%, rgba(94, 94, 94, 1) 59%, rgba(94, 94, 94, 1) 100%);
+  border: 1px inset rgba(145, 143, 145, 1);
+  border-radius: 10px;
+  height: 17px;
+  width: 110px;
+}
+
+form.form-search button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.top-nav .search-input {
+  position: relative;
+}
+
+/* Main Content */
+.section-one .billboard {
+  width: 100%;
+  height: 538px;
+  background: #b2b2b2 url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg") 50% 100% no-repeat;
+}
+
+.section-one .content {
+  position: absolute;
+  top: 82px;
+  left: 0;
+  right: 0;
+}
+
+header.header {
+  margin-top: 35px;
+  text-align: center;
+}
+
+header.header a {
+  color: #fff;
+}
+
+header .heading h1 {
+  font-size: 60px;
+  font-weight: 100;
+}
+
+header .sub-heading h2 {
+  font-size: 32px;
+  font-weight: 300;
+  width: 60%;
+  margin: 12px auto;
+}
+
+header h2.lower {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+header h2.lower:hover {
+  text-decoration: underline;
+}
+
+header .lower i {
+  font-size: 28px;
+  vertical-align: middle;
+  margin-left: 10px;
 }
