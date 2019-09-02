@@ -343,8 +343,8 @@ footer .right {
   float: right;
 }
 
-footer .right ul li,
-footer .copyright li {
+footer .copyright .nav-item,
+footer .right .nav-item {
   float: left;
 }
 
@@ -418,8 +418,8 @@ footer .copyright a:hover {
     float: none;
   }
 
-  footer .right ul li,
-  footer .copyright li {
+  footer .copyright li,
+  footer .right ul li {
     float: none;
   }
 
@@ -441,9 +441,6 @@ footer .copyright a:hover {
 
 @media (max-width: 800px) {
   /* Nav Bar */
-  .top-nav ul li a:hover {
-    background: -webkit-linear-gradient(top, rgba(145, 143, 145, 1) 0%, rgba(128, 128, 128, 1) 35%, rgba(95, 95, 95, 1) 59%, rgba(94, 94, 94, 1) 59%, rgba(94, 94, 94, 1) 100%);
-  }
 
   .top-nav {
     width: 100%;
@@ -458,6 +455,10 @@ footer .copyright a:hover {
 
   .top-nav ul a {
     cursor: auto;
+  }
+
+  .top-nav ul li a:hover {
+    background: -webkit-linear-gradient(top, rgba(145, 143, 145, 1) 0%, rgba(128, 128, 128, 1) 35%, rgba(95, 95, 95, 1) 59%, rgba(94, 94, 94, 1) 59%, rgba(94, 94, 94, 1) 100%);
   }
 
   .top-nav ul li:not(:first-child) {
@@ -478,7 +479,7 @@ footer .copyright a:hover {
   }
 
   .top-nav .apple::after {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free", sans-serif;
     font-weight: 600;
     content: "\f0c9";
     position: absolute;
