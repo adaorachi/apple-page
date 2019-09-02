@@ -24,7 +24,7 @@ The purpose of this project is to make a clone of the <a href="https://web.archi
 ## Setup
 This project is built with the basic web page structures and styling. It is pretty simple to setup. All you have to do is to clone the project into your local repository.
 Find attached below a preview of the project: <br>
-<a href="https://raw.githack.com/adaorachi/apple-page/developer/index.html">Apple Web Page</a>
+<a href="https://raw.githack.com/adaorachi/apple-page/master/index.html">Apple Web Page</a>
 
 ## Features
 List of features ready and TODOs for future development
