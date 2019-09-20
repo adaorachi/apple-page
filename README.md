@@ -3,9 +3,9 @@ Apple Old Website Clone Page
 
 ## Table of contents
 * [General info](#general-info)
+* [Setup & Live Preview](#setup)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
-* [Setup](#setup)
 * [Features](#features)
 * [Status](#status)
 * [Inspiration](#inspiration)
@@ -14,17 +14,17 @@ Apple Old Website Clone Page
 ## General info
 The purpose of this project is to make a clone of the <a href="https://web.archive.org/web/20140301004610/http://www.apple.com/">Apple Web Page</a>.
 
+## Setup & Live Preview
+This project is built with the basic web page structures and styling. It is pretty simple to setup. All you have to do is to clone the project into your local repository.
+Find attached below a preview of the project: <br>
+<a href="https://raw.githack.com/adaorachi/apple-page/master/index.html">Apple Web Page</a>
+
 ## Screenshots
 ![Example screenshot](images/screenshot1.jpg)
 
 ## Technologies
 * HTML5
 * CSS3
-
-## Setup
-This project is built with the basic web page structures and styling. It is pretty simple to setup. All you have to do is to clone the project into your local repository.
-Find attached below a preview of the project: <br>
-<a href="https://raw.githack.com/adaorachi/apple-page/master/index.html">Apple Web Page</a>
 
 ## Features
 List of features ready and TODOs for future development
